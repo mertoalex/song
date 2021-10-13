@@ -31,3 +31,13 @@ Err: there is no link!
 It's installed!
 
 now you can delete song-cmd folder\!\!
+
+## how to use
+command link
+```sh
+song {link} [file name]
+#example
+song https://youtu.be/dQw4w9WgXcQ
+#or
+song https://youtu.be/dQw4w9WgXcQ cool-song
+````

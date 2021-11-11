@@ -24,7 +24,7 @@ $"
 read deb
 case $deb in
 	1) sudo pacman -Syyu youtube-dl ffmpeg ;;
-	2) sudo apt-get update && sudo apt-get upgrade && sudo apt-get install youtube-dl ffmpeg ;;
+	2) sudo apt-get update && sudo apt-get install youtube-dl ffmpeg ;;
 	*) exit				;;
 esac
 ' ;;

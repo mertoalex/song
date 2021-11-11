@@ -15,7 +15,6 @@ sudo pacman -Syyu youtube-dl ffmpeg
 
 #debian based
 sudo apt-get update
-sudo apt-get upgrade
 sudo apt-get install youtube-dl ffmpeg
 ```
 

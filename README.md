@@ -30,6 +30,10 @@ Err: there is no link!
 It's installed!
 
 now you can delete song-cmd folder\!\!
+```sh
+cd ..
+rm -rf song-cmd
+```
 
 ## how to use
 command link

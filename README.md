@@ -10,12 +10,19 @@ chmod +x install.sh
 
 ##if you install manually youtube-dl and ffmpeg
 
-#arch based
+#arch boi
 sudo pacman -Syyu youtube-dl ffmpeg
 
-#debian based
+#debian boi
 sudo apt-get update
 sudo apt-get install youtube-dl ffmpeg
+
+#VOID BOI
+sudo xbps-install youtube-dl ffmpeg
+
+#termux boi
+pkg install ffmpeg python
+pip install youtube-dl
 ```
 
 ## after installition

@@ -2,7 +2,7 @@
 this command is downloads youtube links as mp3 to ~/Music folder
 
 ## donate
-[donate link](https://mertoalex.github.io)
+[donate link (turkish)](https://www.bynogame.com/tr/destekle/mertoalex-bagis)
 
 ## how to install
 ```sh

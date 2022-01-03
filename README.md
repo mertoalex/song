@@ -1,6 +1,9 @@
 # song command
 this command is downloads youtube links as mp3 to ~/Music folder
 
+## donate
+[donate link](https://mertoalex.github.io)
+
 ## how to install
 ```sh
 git clone https://github.com/mertoalex/song-cmd.git

@@ -23,6 +23,9 @@ sudo apt-get install youtube-dl ffmpeg
 #VOID BOI
 sudo xbps-install youtube-dl ffmpeg
 
+#openSussye boi
+sudo zypper install youtube-dl ffmpeg
+
 #termux boi
 pkg install ffmpeg python
 pip install youtube-dl

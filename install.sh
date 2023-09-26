@@ -15,7 +15,7 @@ case $lin in
 	*) sudo mv song /usr/bin/ ;;
 esac
 echo "
-this program need ffmpeg and youtube-dl
+this program need ffmpeg and yt-dlp
 we need your base distro (if another distro we can not install this auto)
 ( 1: Arch
   2: Debian
@@ -25,10 +25,10 @@ we need your base distro (if another distro we can not install this auto)
 $"
 read deb
 case $deb in
-	1) sudo pacman -Syyu youtube-dl ffmpeg ;;
-	2) sudo apt-get update && sudo apt-get install youtube-dl ffmpeg ;;
-	3) sudo xbps-install youtube-dl ffmpeg ;;
-	4) sudo zypper install youtube-dl ffmpeg ;;
+	1) sudo pacman -Syyu yt-dlp ffmpeg ;;
+	2) sudo apt-get update && sudo apt-get install yt-dlp ffmpeg ;;
+	3) sudo xbps-install yt-dlp ffmpeg ;;
+	4) sudo zypper install yt-dlp ffmpeg ;;
 	*) exit				;;
 esac
 ' ;;

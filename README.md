@@ -80,7 +80,7 @@ song https://youtu.be/dQw4w9WgXcQ cool-song
 # song command not found (termux)
 you should att `$PREFIX/local/bin` to path
 this code makes that
-```
+```sh
 export SHELL="SHELL_NAME" # replace `SHELL_NAME` with your shell, e.g. bash, zsh, fish, dash, csh etc.
 echo -e "\n"'export PATH="$PREFIX/local/bin:$PATH"' >> ~/${SHELL}rc # I think It's work on most shells.
 ```

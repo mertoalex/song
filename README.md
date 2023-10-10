@@ -13,7 +13,7 @@ chmod +x install.sh
 
 ##if you install manually yt-dlp and ffmpeg (replace `sudo` with `doas` if you using `doas`)
 
-#debian boi (replace `apt-get` with `nala` if you using `nala`)
+#debian or termux boi (replace `apt-get` with `nala` if you using `nala`)
 sudo apt-get update
 sudo apt-get install yt-dlp ffmpeg
 
@@ -25,9 +25,6 @@ sudo xbps-install yt-dlp ffmpeg
 
 #openSussye boi
 sudo zypper install yt-dlp ffmpeg
-
-#termux boi
-apt install ffmpeg yt-dlp python
 
 #fedora boi
 sudo dnf install yt-dlp ffmpeg

@@ -2,7 +2,7 @@
 this script is downloads youtube links as mp3 to ~/Music folder
 
 ## donate
-[donate link (turkish)](https://kreosus.com/mertoalex) or [this](https://mertoalex.github.io)
+[donate link](https://kreosus.com/mertoalex) or [this](https://mertoalex.github.io)
 
 ## how to install
 ```sh

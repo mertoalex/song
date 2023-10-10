@@ -8,11 +8,11 @@ then
 		ffmpeg -i "$HOME/Music/$2.flv" -acodec libmp3lame "$HOME/Music/$2.mp3"
 		rm "$HOME/Music/$2.flv"
 	else
-		echo "Warn: there is no file name (file is unnamed)"
+		echo "[W]: There is no file name. (file is unnamed)"
 		yt-dlp -o "$HOME/Music/unnamed.flv" "$1" -f bestaudio
 		ffmpeg -i "$HOME/Music/unnamed.flv" -acodec libmp3lame "$HOME/Music/unnamed.mp3"
 		rm "$HOME/Music/unnamed.flv"
 	fi
 else
-	echo Err: there is no link!
+	echo "[E]: There is no link!"
 fi

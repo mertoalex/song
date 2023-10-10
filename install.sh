@@ -19,8 +19,8 @@ fi
 
 
 chmod +x song
-$sudo mkdir $PREFIX/local/bin/
-$sudo cp song $PREFIX/local/bin/ 
+$sudo mkdir -pv $PREFIX/local/bin/
+$sudo cp song -v $PREFIX/local/bin/ 
 
 echo "
 this program need ffmpeg and yt-dlp

@@ -1,34 +1,33 @@
-# song command
-this command is downloads youtube links as mp3 to ~/Music folder
+# song script
+this script is downloads youtube links as mp3 to ~/Music folder
 
 ## donate
 [donate link (turkish)](https://kreosus.com/mertoalex) or [this](https://mertoalex.github.io)
 
 ## how to install
 ```sh
-git clone https://github.com/mertoalex/song-cmd.git
-cd song-cmd
+git clone https://github.com/mertoalex/song.git
+cd song
 chmod +x install.sh
 ./install.sh
 
-##if you install manually youtube-dl and ffmpeg
+##if you install manually yt-dlp and ffmpeg
 
 #arch boi
-sudo pacman -Syyu youtube-dl ffmpeg
+sudo pacman -Syyu yt-dlp ffmpeg
 
 #debian boi
 sudo apt-get update
-sudo apt-get install youtube-dl ffmpeg
+sudo apt-get install yt-dlp ffmpeg
 
-#VOID BOI
-sudo xbps-install youtube-dl ffmpeg
+#void Boi
+sudo xbps-install yt-dlp ffmpeg
 
 #openSussye boi
-sudo zypper install youtube-dl ffmpeg
+sudo zypper install yt-dlp ffmpeg
 
 #termux boi
-pkg install ffmpeg python
-pip install youtube-dl
+apt install ffmpeg yt-dlp python
 ```
 
 ## after installition
@@ -38,14 +37,14 @@ song
 ```
 if output is
 ```sh
-Err: there is no link!
+[E]: There is no link!
 ```
 It's installed!
 
 now you can delete song-cmd folder\!\!
 ```sh
 cd ..
-rm -rf song-cmd
+rm -rf song
 ```
 
 ## how to use

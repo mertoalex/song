@@ -25,28 +25,30 @@ $sudo cp song $PREFIX/local/bin/
 echo "
 this program need ffmpeg and yt-dlp
 we need your distro base (if another distro we can not install these auto)
-(	1: Debian based or termux based
-	2: Arch based
-	3: Void based
-	4: OpenSuSe based
-	5: Fedora based
-	6: CentOS/RHEL based
-	7: Gentoo based
-	8: Alpine Linux BASED
-	9: Pisi based
+(	1: Debian based
+	2: Termux based
+	3: Arch based
+	4: Void based
+	5: OpenSuSe based
+	6: Fedora based
+	7: CentOS/RHEL based
+	8: Gentoo based
+	9: Alpine Linux BASED
+	A: Pisi based
 	*: manual install)
 $"
 read base
 case $base in
 	1) $sudo $apt update && $sudo $apt install yt-dlp ffmpeg	;;
-	2) $sudo pacman -Syyu yt-dlp ffmpeg				;;
-	3) $sudo xbps-install yt-dlp ffmpeg				;;
-	4) $sudo zypper install yt-dlp ffmpeg				;;
-	5) $sudo dnf install yt-dlp ffmpeg				;;
-	6) $sudo yum install yt-dlp ffmpeg				;;
-	7) USE="$USE mp3" $sudo emerge --jobs $(nproc) --verbose --ask net-misc/yt-dlp media-video/ffmpeg;;
-	8) $sudo apk add yt-dlp ffmpeg					;;
-	9) $sudo pisi install yt-dlp ffmpeg				;;
+	2) termux-setup-storage; $apt update && $apt upgrade; $apt install libexpat openssl python ffmpeg; pip install -U yt-dlp;;
+	3) $sudo pacman -Syy yt-dlp ffmpeg				;;
+	4) $sudo xbps-install yt-dlp ffmpeg				;;
+	5) $sudo zypper install yt-dlp ffmpeg				;;
+	6) $sudo dnf install yt-dlp ffmpeg				;;
+	7) $sudo yum install yt-dlp ffmpeg				;;
+	8) USE="$USE mp3" $sudo emerge --jobs $(nproc) --verbose --ask net-misc/yt-dlp media-video/ffmpeg;;
+	9) $sudo apk add yt-dlp ffmpeg					;;
+	a|A) $sudo pisi install yt-dlp ffmpeg				;;
 	*) exit								;;
 esac
 

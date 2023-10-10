@@ -13,9 +13,15 @@ chmod +x install.sh
 
 ##if you install manually yt-dlp and ffmpeg (replace `sudo` with `doas` if you using `doas`)
 
-#debian or termux boi (replace `apt-get` with `nala` if you using `nala`)
+#debian boi (replace `apt-get` with `nala` if you using `nala`)
 sudo apt-get update
 sudo apt-get install yt-dlp ffmpeg
+
+#termux boi (source: https://github.com/yt-dlp/yt-dlp/wiki/Installation#android)
+termux-setup-storage
+apt-get update && apt-get upgrade
+apt-get install libexpat openssl python ffmpeg
+pip install -U yt-dlp
 
 #arch boi
 sudo pacman -Syy yt-dlp ffmpeg

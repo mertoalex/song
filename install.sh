@@ -17,6 +17,7 @@ if ! command -v nala &> /dev/null
 then	export apt="apt-get"
 fi
 
+export PREFIX="$PREFIX/usr"
 
 chmod +x song
 $sudo mkdir -pv $PREFIX/local/bin/
